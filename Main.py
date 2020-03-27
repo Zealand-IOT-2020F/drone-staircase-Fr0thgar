@@ -1,2 +1,51 @@
+import Drone
+import sys
+import time
 
-#here you should interact with the drone
+# Live drone
+#drone_1 = drone.Drone("128.1.1.1", 8889)
+
+# Test drone
+# drone start up
+drone_1 = Drone.Drone('192.168.10.1', 8889)
+drone_1.printInfo(1)
+drone_1.connect(1)
+
+#region old
+# # Print out start information
+# print(drone_1.battery(0.1))
+# print(drone_1.time(0.1))
+# print(drone_1.sdk(0.1))
+# print(drone_1.sn(0.1))
+
+# # Drone flightplan
+# drone_1.takeOff(1)
+# drone_1.cw("90", 1)
+# drone_1.ccw("360", 1)
+# drone_1.cw("180", 1)
+# drone_1.up("60", 1)
+# #drone_1.flip("b", 1)
+# drone_1.down("30", 1)
+# drone_1.left("20", 1)
+# drone_1.right("20", 1)
+
+# # print out landing information
+# print(drone_1.battery(0.1))
+# print(drone_1.time(0.1))
+
+# # Landing sequence
+# drone_1.land(1)
+# drone_1.end(1)
+#endregion
+
+# Staircase climb up #
+# 15 trin 5 - 5 - 5 n
+# Forventet Løsning for Martins trappe
+
+
+# Lav det dynamisk
+# Hvor mange trin er der
+
+# Hvor mange trin før den skal dreje x antal gange
+
+# Hvilken vej skal dronen dreje
