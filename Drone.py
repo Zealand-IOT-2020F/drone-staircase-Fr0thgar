@@ -232,4 +232,10 @@ class Drone(object):
         return result
 
 #endregion
- 
+#region Step
+
+    def stepUp(self, up, forward, wait):
+        result = self.sendMessage("up " + 19 + ", forward " + 24)
+        time.sleep(wait)
+
+#endregion
